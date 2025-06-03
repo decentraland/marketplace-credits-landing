@@ -43,7 +43,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm relative">
+    <section className="py-24 px-4 bg-gradient-to-br from-dcl-shadow/40 to-dcl-purple/40 backdrop-blur-sm relative">
       {/* Background overlay */}
       <div className="absolute inset-0 opacity-10">
         <div 
@@ -58,7 +58,7 @@ const FAQ = () => {
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
+          <h2 className="text-5xl md:text-6xl font-bold text-dcl-white mb-8">
             Frequently Asked Questions
           </h2>
           <p className="text-2xl text-gray-200">
@@ -66,15 +66,15 @@ const FAQ = () => {
           </p>
         </div>
         
-        <div className="bg-gradient-to-br from-cyan-500/20 to-purple-500/20 backdrop-blur-md rounded-3xl border border-cyan-400/30 p-10">
+        <div className="bg-gradient-to-br from-dcl-ruby/20 to-dcl-orange/20 backdrop-blur-md rounded-3xl border border-dcl-ruby/30 p-10">
           <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-cyan-400/20 rounded-2xl px-8 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 hover:from-cyan-500/20 hover:to-purple-500/20 transition-all duration-300 backdrop-blur-sm"
+                className="border border-dcl-ruby/20 rounded-2xl px-8 bg-gradient-to-r from-dcl-ruby/10 to-dcl-orange/10 hover:from-dcl-ruby/20 hover:to-dcl-orange/20 transition-all duration-300 backdrop-blur-sm"
               >
-                <AccordionTrigger className="text-white hover:text-cyan-300 text-left font-bold py-8 text-lg">
+                <AccordionTrigger className="text-dcl-white hover:text-dcl-ruby text-left font-bold py-8 text-lg">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-200 pb-8 leading-relaxed text-lg">

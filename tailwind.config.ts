@@ -62,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Decentraland Brand Colors
+				dcl: {
+					ruby: '#FF2D55',
+					orange: '#FF7439',
+					yellow: '#FFC95B',
+					lavender: '#C640CD',
+					purple: '#691FA9',
+					shadow: '#161518',
+					white: '#FCFCFC'
 				}
 			},
 			borderRadius: {

@@ -6,7 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-teal-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-dcl-shadow via-dcl-purple to-dcl-lavender relative overflow-hidden">
       {/* Background Image Overlay */}
       <div 
         className="fixed inset-0 opacity-10 z-0"
