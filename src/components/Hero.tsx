@@ -5,8 +5,8 @@ import { Download, ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
-      {/* Background gradient using logo colors */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dcl-purple via-dcl-lavender to-cyan-400"></div>
+      {/* Background gradient using darker version of B8B9FF */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#6B6CCC] via-[#5A5BB8] to-[#4A4BA4]"></div>
       
       {/* Floating logo-inspired shapes */}
       <div className="absolute inset-0 opacity-20 z-10">

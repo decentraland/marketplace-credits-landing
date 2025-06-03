@@ -6,7 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dcl-purple via-dcl-lavender to-cyan-400 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#6B6CCC] via-[#5A5BB8] to-[#4A4BA4] relative overflow-hidden">
       {/* Content */}
       <div className="relative z-10">
         <Hero />
