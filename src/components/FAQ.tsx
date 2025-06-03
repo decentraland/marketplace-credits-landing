@@ -43,29 +43,41 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-black/20">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+    <section className="py-24 px-4 bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm relative">
+      {/* Background overlay */}
+      <div className="absolute inset-0 opacity-10">
+        <div 
+          className="w-full h-full"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&h=1080')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+      </div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-2xl text-gray-200">
             Everything you need to know about Marketplace Credits
           </p>
         </div>
         
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="bg-gradient-to-br from-cyan-500/20 to-purple-500/20 backdrop-blur-md rounded-3xl border border-cyan-400/30 p-10">
+          <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-white/10 rounded-xl px-6 bg-white/5 hover:bg-white/10 transition-all duration-300"
+                className="border border-cyan-400/20 rounded-2xl px-8 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 hover:from-cyan-500/20 hover:to-purple-500/20 transition-all duration-300 backdrop-blur-sm"
               >
-                <AccordionTrigger className="text-white hover:text-purple-300 text-left font-semibold py-6">
+                <AccordionTrigger className="text-white hover:text-cyan-300 text-left font-bold py-8 text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 pb-6 leading-relaxed">
+                <AccordionContent className="text-gray-200 pb-8 leading-relaxed text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
