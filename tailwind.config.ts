@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Decentraland Brand Colors
+				// Decentraland Brand Colors with cyan addition
 				dcl: {
 					ruby: '#FF2D55',
 					orange: '#FF7439',
@@ -72,6 +71,11 @@ export default {
 					purple: '#691FA9',
 					shadow: '#161518',
 					white: '#FCFCFC'
+				},
+				// Adding cyan to match logo gradient
+				cyan: {
+					300: '#67e8f9',
+					400: '#22d3ee'
 				}
 			},
 			borderRadius: {
