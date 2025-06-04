@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
       {/* Background gradient using darker version of B8B9FF */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#6B6CCC] via-[#5A5BB8] to-[#4A4BA4]"></div>
       
@@ -18,11 +15,7 @@ const Hero = () => {
       <div className="relative z-20 max-w-4xl mx-auto text-center">
         {/* Logo placement */}
         <div className="flex justify-center mb-8 animate-fade-in">
-          <img 
-            src="/lovable-uploads/58341ed4-a73f-4046-a98d-3a273a096a74.png" 
-            alt="Decentraland Logo" 
-            className="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl hover:scale-110 transition-transform duration-300"
-          />
+          <img src="/lovable-uploads/58341ed4-a73f-4046-a98d-3a273a096a74.png" alt="Decentraland Logo" className="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
         </div>
         
         <div className="inline-block px-6 py-3 bg-gradient-to-r from-dcl-ruby/20 to-dcl-orange/20 rounded-full border border-dcl-ruby/30 mb-8 animate-fade-in backdrop-blur-sm">
@@ -42,21 +35,14 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in mb-12">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-10 py-8 text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-dcl-ruby/30"
-            onClick={() => window.open('https://decentraland.org/download', '_blank')}
-          >
+          <Button size="lg" className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-10 py-8 text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-dcl-ruby/30" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
             <Download className="mr-3 h-6 w-6" />
             Download Decentraland
           </Button>
           
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-2 border-dcl-white/50 text-dcl-white hover:bg-dcl-white/10 hover:border-dcl-white px-10 py-8 text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-            onClick={() => document.getElementById('details')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+          <Button variant="outline" size="lg" onClick={() => document.getElementById('details')?.scrollIntoView({
+          behavior: 'smooth'
+        })} className="border-2 border-dcl-white/50 hover:bg-dcl-white/10 hover:border-dcl-white px-10 py-8 text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm text-red-500">
             Learn More
             <ArrowRight className="ml-3 h-6 w-6" />
           </Button>
@@ -77,8 +63,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
