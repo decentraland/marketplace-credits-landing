@@ -1,16 +1,8 @@
-
 const Header = () => {
-  return (
-    <header className="fixed top-0 left-0 z-50 p-6">
+  return <header className="fixed top-0 left-0 z-50 p-6 px-0 ">
       <div className="flex items-center">
-        <img 
-          src="/lovable-uploads/2eaf4785-bfd9-4494-8bdc-004538edf764.png" 
-          alt="Decentraland Logo" 
-          className="w-12 h-12 md:w-16 md:h-16 hover:scale-110 transition-transform duration-300 drop-shadow-lg"
-        />
+        <img alt="Decentraland Logo" className="max-w-44 w-44 md:-left-0 md:-left-20 hover:min-h-16 scale-110 duration-300 drop-shadow-lg object-scale-down" src="/lovable-uploads/d2a994bf-7f86-45e5-897a-90d183453327.png" />
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
