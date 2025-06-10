@@ -1,20 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
-
 const FinalCTA = () => {
-  return (
-    <section className="py-24 px-4 relative overflow-hidden">
+  return <section className="py-24 px-4 relative overflow-hidden">
       {/* Background Video/Image */}
       <div className="absolute inset-0 opacity-15">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=1920&h=1080')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
+        <div className="w-full h-full" style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=1920&h=1080')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }} />
       </div>
       
       {/* Floating elements */}
@@ -36,24 +30,12 @@ const FinalCTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-12 py-8 text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-dcl-ruby/30"
-              onClick={() => window.open('https://decentraland.org/download', '_blank')}
-            >
+            <Button size="lg" className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-12 py-8 text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-dcl-ruby/30" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
               <Download className="mr-4 h-7 w-7" />
               Download Decentraland
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-dcl-ruby/50 text-dcl-ruby hover:bg-dcl-ruby/10 hover:border-dcl-ruby px-12 py-8 text-2xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-              onClick={() => window.open('https://play.decentraland.org', '_blank')}
-            >
-              Play in Browser
-              <ArrowRight className="ml-4 h-7 w-7" />
-            </Button>
+            
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
@@ -75,8 +57,6 @@ const FinalCTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FinalCTA;
