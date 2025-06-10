@@ -42,9 +42,7 @@ const Hero = () => {
             Download Decentraland
           </Button>
           
-          <Button variant="outline" size="lg" onClick={() => document.getElementById('details')?.scrollIntoView({
-          behavior: 'smooth'
-        })} className="border-2 border-dcl-white/50 hover:bg-dcl-white/10 hover:border-dcl-white px-10 py-8 text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm text-red-500">
+          <Button variant="outline" size="lg" onClick={() => window.open('https://decentraland.org/blog/announcements/marketplace-credits-earn-weekly-rewards-to-power-up-your-look', '_blank')} className="border-2 border-dcl-white/50 hover:bg-dcl-white/10 hover:border-dcl-white px-10 py-8 text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm text-red-500">
             Learn More
             <ArrowRight className="ml-3 h-6 w-6" />
           </Button>
