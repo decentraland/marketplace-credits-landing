@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden pt-24">
       {/* Background gradient using black */}
       <div className="absolute inset-0 bg-black"></div>
       
