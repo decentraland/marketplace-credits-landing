@@ -18,8 +18,8 @@ const FloatingBadge = ({
 
     const animate = () => {
       const time = Date.now() * 0.001 + delay;
-      const floatY = Math.sin(time * 0.8) * 10;
-      const rotateZ = Math.sin(time * 0.5) * 5;
+      const floatY = Math.sin(time * 0.8) * 15;
+      const rotateZ = Math.sin(time * 0.5) * 8;
       
       badge.style.transform = `translate(-50%, -50%) translateY(${floatY}px) rotate(${rotateZ}deg) scale(${scale})`;
     };
@@ -41,7 +41,7 @@ const FloatingBadge = ({
       <img 
         src="/lovable-uploads/cba64fff-7bf3-40cd-876b-f3cd3bbe2b78.png" 
         alt="Shopping Badge" 
-        className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 drop-shadow-lg opacity-25 hover:opacity-40 transition-opacity duration-300"
+        className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl opacity-40 hover:opacity-60 transition-opacity duration-300"
       />
     </div>
   );
@@ -50,19 +50,11 @@ const FloatingBadge = ({
 const AnimatedShoppingBags = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {/* Far edge positions only - avoiding any center content areas */}
-      <FloatingBadge position={{ x: '2%', y: '10%' }} scale={0.4} delay={0} />
-      <FloatingBadge position={{ x: '98%', y: '15%' }} scale={0.3} delay={1} />
-      <FloatingBadge position={{ x: '1%', y: '30%' }} scale={0.3} delay={6} />
-      <FloatingBadge position={{ x: '99%', y: '35%' }} scale={0.4} delay={14} />
-      
-      {/* Bottom far edges */}
-      <FloatingBadge position={{ x: '3%', y: '85%' }} scale={0.3} delay={4} />
-      <FloatingBadge position={{ x: '97%', y: '90%' }} scale={0.4} delay={5} />
-      
-      {/* Very subtle corner elements */}
-      <FloatingBadge position={{ x: '1%', y: '60%' }} scale={0.2} delay={11} />
-      <FloatingBadge position={{ x: '99%', y: '65%' }} scale={0.2} delay={12} />
+      {/* Reduced to only clean, well-positioned icons */}
+      <FloatingBadge position={{ x: '5%', y: '15%' }} scale={0.7} delay={0} />
+      <FloatingBadge position={{ x: '95%', y: '20%' }} scale={0.6} delay={2} />
+      <FloatingBadge position={{ x: '3%', y: '70%' }} scale={0.6} delay={4} />
+      <FloatingBadge position={{ x: '97%', y: '75%' }} scale={0.7} delay={6} />
     </div>
   );
 };
