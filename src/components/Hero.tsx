@@ -5,14 +5,14 @@ import { Download, ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
-      {/* Background gradient using black */}
-      <div className="absolute inset-0 bg-black"></div>
-      
-      {/* Floating logo-inspired shapes */}
-      <div className="absolute inset-0 opacity-20 z-10">
-        <div className="absolute top-20 left-10 w-64 h-64 md:w-96 md:h-96 bg-gradient-to-br from-dcl-lavender to-cyan-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-10 w-64 h-64 md:w-96 md:h-96 bg-gradient-to-br from-dcl-purple to-dcl-lavender rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/2 w-64 h-64 md:w-96 md:h-96 bg-gradient-to-br from-cyan-400 to-dcl-purple rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/e74e411c-a482-4cdc-b2e7-c973a9cc2729.png" 
+          alt="Hero Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       <div className="relative z-20 max-w-4xl mx-auto text-center">
