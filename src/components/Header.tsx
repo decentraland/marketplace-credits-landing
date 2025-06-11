@@ -1,7 +1,6 @@
-
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 z-50 p-4 md:p-6 md:px-[65px] rounded-md md:py-[19px]">
+    <header className="p-4 md:p-6 md:px-[65px] rounded-md md:py-[19px]">
       <div className="flex items-center py-4 md:py-[31px]">
         <img 
           alt="Decentraland Logo" 
