@@ -4,6 +4,7 @@ import ProgramDetails from "@/components/ProgramDetails";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Header from "@/components/Header";
+import AnimatedShoppingBags from "@/components/AnimatedShoppingBags";
 import useAnalytics from "@/hooks/use-analytics";
 import { useEffect } from "react";
 
@@ -19,12 +20,19 @@ const Index = () => {
   }, [page]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#CC49D3] to-[#5E1A99]">
-      <Header />
-      <Hero />
-      <ProgramDetails />
-      <FAQ />
-      <FinalCTA />
+    <div className="min-h-screen bg-gradient-to-br from-[#CC49D3] to-[#5E1A99] relative">
+      {/* Global animated shopping bags background */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <AnimatedShoppingBags />
+      </div>
+      
+      <div className="relative z-10">
+        <Header />
+        <Hero />
+        <ProgramDetails />
+        <FAQ />
+        <FinalCTA />
+      </div>
     </div>
   );
 };
