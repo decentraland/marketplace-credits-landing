@@ -41,7 +41,7 @@ const FloatingBadge = ({
       <img 
         src="/lovable-uploads/cba64fff-7bf3-40cd-876b-f3cd3bbe2b78.png" 
         alt="Shopping Badge" 
-        className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 drop-shadow-lg opacity-10 hover:opacity-20 transition-opacity duration-300"
+        className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 drop-shadow-lg opacity-25 hover:opacity-40 transition-opacity duration-300"
       />
     </div>
   );
