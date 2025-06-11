@@ -1,18 +1,8 @@
-
 const ProgramDetails = () => {
   return (
     <section id="details" className="py-16 md:py-24 px-4 relative">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=1920&h=1080')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-      </div>
+      {/* Subtle overlay */}
+      <div className="absolute inset-0 bg-black/10"></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-12 md:mb-20">

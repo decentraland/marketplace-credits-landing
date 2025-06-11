@@ -1,25 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const FinalCTA = () => {
   return (
     <section className="py-16 md:py-24 px-4 relative overflow-hidden">
-      {/* Background Video/Image */}
-      <div className="absolute inset-0 opacity-15">
-        <div className="w-full h-full" style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=1920&h=1080')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }} />
-      </div>
-      
-      {/* Floating elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-dcl-ruby rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-dcl-orange rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 md:w-96 md:h-96 bg-dcl-yellow rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
-      </div>
+      {/* Subtle overlay */}
+      <div className="absolute inset-0 bg-black/15"></div>
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <div className="bg-gradient-to-br from-dcl-ruby/30 via-dcl-orange/30 to-dcl-yellow/30 rounded-2xl md:rounded-3xl p-8 md:p-16 border border-dcl-ruby/40 backdrop-blur-md">

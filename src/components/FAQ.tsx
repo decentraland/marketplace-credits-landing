@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -43,18 +42,9 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-dcl-shadow/40 to-dcl-purple/40 backdrop-blur-sm relative">
-      {/* Background overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&h=1080')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-      </div>
+    <section className="py-16 md:py-24 px-4 relative">
+      {/* Subtle overlay */}
+      <div className="absolute inset-0 bg-black/5"></div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-12 md:mb-20">
