@@ -1,13 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="py-16 md:py-24 px-4 relative overflow-hidden">
-      {/* Subtle overlay */}
-      <div className="absolute inset-0 bg-black/15"></div>
-      
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
+    <section className="py-16 md:py-24 px-4">
+      <div className="max-w-5xl mx-auto text-center">
         <div className="bg-gradient-to-br from-dcl-ruby/30 via-dcl-orange/30 to-dcl-yellow/30 rounded-2xl md:rounded-3xl p-8 md:p-16 border border-dcl-ruby/40 backdrop-blur-md">
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-dcl-white mb-6 md:mb-8 px-4">
             Ready to Level Up Your Avatar?

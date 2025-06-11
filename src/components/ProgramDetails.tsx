@@ -1,10 +1,8 @@
+
 const ProgramDetails = () => {
   return (
-    <section id="details" className="py-16 md:py-24 px-4 relative">
-      {/* Subtle overlay */}
-      <div className="absolute inset-0 bg-black/10"></div>
-      
-      <div className="max-w-6xl mx-auto relative z-10">
+    <section id="details" className="py-16 md:py-24 px-4">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 md:mb-20">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-dcl-white mb-6 md:mb-8 px-4">
             How Marketplace Credits Work

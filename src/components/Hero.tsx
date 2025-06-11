@@ -1,12 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden">
-      {/* Subtle overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
-      
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
       <div className="relative z-20 max-w-4xl mx-auto text-center">
         {/* Logo placement */}
         <div className="flex justify-center mb-6 md:mb-8 animate-fade-in">
