@@ -43,7 +43,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-dcl-shadow/40 to-dcl-purple/40 backdrop-blur-sm relative">
+    <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-dcl-shadow/40 to-dcl-purple/40 backdrop-blur-sm relative">
       {/* Background overlay */}
       <div className="absolute inset-0 opacity-10">
         <div 
@@ -57,27 +57,27 @@ const FAQ = () => {
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-dcl-white mb-8">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-dcl-white mb-6 md:mb-8 px-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-2xl text-gray-200">
+          <p className="text-lg md:text-2xl text-gray-200 px-4">
             Everything you need to know about Marketplace Credits
           </p>
         </div>
         
-        <div className="bg-gradient-to-br from-dcl-ruby/20 to-dcl-orange/20 backdrop-blur-md rounded-3xl border border-dcl-ruby/30 p-10">
-          <Accordion type="single" collapsible className="space-y-6">
+        <div className="bg-gradient-to-br from-dcl-ruby/20 to-dcl-orange/20 backdrop-blur-md rounded-2xl md:rounded-3xl border border-dcl-ruby/30 p-6 md:p-10">
+          <Accordion type="single" collapsible className="space-y-4 md:space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-dcl-ruby/20 rounded-2xl px-8 bg-gradient-to-r from-dcl-ruby/10 to-dcl-orange/10 hover:from-dcl-ruby/20 hover:to-dcl-orange/20 transition-all duration-300 backdrop-blur-sm"
+                className="border border-dcl-ruby/20 rounded-xl md:rounded-2xl px-4 md:px-8 bg-gradient-to-r from-dcl-ruby/10 to-dcl-orange/10 hover:from-dcl-ruby/20 hover:to-dcl-orange/20 transition-all duration-300 backdrop-blur-sm"
               >
-                <AccordionTrigger className="text-dcl-white hover:text-dcl-ruby text-left font-bold py-8 text-lg">
+                <AccordionTrigger className="text-dcl-white hover:text-dcl-ruby text-left font-bold py-6 md:py-8 text-base md:text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-200 pb-8 leading-relaxed text-lg">
+                <AccordionContent className="text-gray-200 pb-6 md:pb-8 leading-relaxed text-base md:text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
