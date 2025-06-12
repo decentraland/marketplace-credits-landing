@@ -1,11 +1,7 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-2 pb-6 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 pt-2 pb-6 overflow-hidden">
       <div className="relative z-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
@@ -43,20 +39,13 @@ const Hero = () => {
           {/* Right side - Avatar Image (Made Even Bigger) */}
           <div className="flex justify-center lg:justify-end items-center order-1 lg:order-2 animate-fade-in">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/2d2485d1-5a3d-4a90-89e0-5758004bf19c.png" 
-                alt="Decentraland Avatar with Shopping Bags" 
-                className="w-[450px] h-[450px] md:w-[600px] md:h-[600px] lg:w-[750px] lg:h-[750px] xl:w-[850px] xl:h-[850px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
-              />
+              <img src="/lovable-uploads/2d2485d1-5a3d-4a90-89e0-5758004bf19c.png" alt="Decentraland Avatar with Shopping Bags" className="w-[800px] h-[800px] md:w-[800px] md:h-[800px] lg:w-[900px] lg:h-[900px] xl:w-[900px] xl:h-[900px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
               {/* Subtle glow effect behind the avatar */}
               <div className="absolute inset-0 bg-gradient-to-r from-dcl-purple/20 to-dcl-lavender/20 rounded-full blur-3xl -z-10"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
-
