@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
@@ -9,11 +8,6 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            {/* Logo placement */}
-            <div className="flex justify-center lg:justify-start mb-6 md:mb-8 animate-fade-in">
-              <img src="/lovable-uploads/58341ed4-a73f-4046-a98d-3a273a096a74.png" alt="Decentraland Logo" className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
-            </div>
-            
             <div className="inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-dcl-ruby/40 to-dcl-orange/40 rounded-full border-2 border-dcl-ruby/60 mb-6 md:mb-8 animate-fade-in backdrop-blur-md shadow-lg">
               <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg">🔥 New Beta Program Live</span>
             </div>
