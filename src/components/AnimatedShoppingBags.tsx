@@ -1,5 +1,6 @@
 
 import { useRef, useEffect } from 'react';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const FloatingBadge = ({ 
   position, 
@@ -36,13 +37,16 @@ const FloatingBadge = ({
         left: position.x,
         top: position.y,
         transform: `translate(-50%, -50%) scale(${scale})`,
+        width: '120px', // Fixed container width
       }}
     >
-      <img 
-        src="/lovable-uploads/cba64fff-7bf3-40cd-876b-f3cd3bbe2b78.png" 
-        alt="Shopping Badge" 
-        className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl opacity-40 hover:opacity-60 transition-opacity duration-300"
-      />
+      <AspectRatio ratio={1} className="w-full">
+        <img 
+          src="/lovable-uploads/cba64fff-7bf3-40cd-876b-f3cd3bbe2b78.png" 
+          alt="Shopping Badge" 
+          className="w-full h-full object-contain drop-shadow-2xl opacity-80 hover:opacity-100 transition-opacity duration-300"
+        />
+      </AspectRatio>
     </div>
   );
 };
@@ -50,11 +54,11 @@ const FloatingBadge = ({
 const AnimatedShoppingBags = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {/* Reduced to only clean, well-positioned icons */}
-      <FloatingBadge position={{ x: '5%', y: '15%' }} scale={0.7} delay={0} />
-      <FloatingBadge position={{ x: '95%', y: '20%' }} scale={0.6} delay={2} />
-      <FloatingBadge position={{ x: '3%', y: '70%' }} scale={0.6} delay={4} />
-      <FloatingBadge position={{ x: '97%', y: '75%' }} scale={0.7} delay={6} />
+      {/* Clean, well-positioned icons with proper aspect ratio */}
+      <FloatingBadge position={{ x: '8%', y: '20%' }} scale={0.8} delay={0} />
+      <FloatingBadge position={{ x: '92%', y: '25%' }} scale={0.7} delay={2} />
+      <FloatingBadge position={{ x: '6%', y: '75%' }} scale={0.7} delay={4} />
+      <FloatingBadge position={{ x: '94%', y: '70%' }} scale={0.8} delay={6} />
     </div>
   );
 };
