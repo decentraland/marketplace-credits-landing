@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
@@ -24,8 +23,7 @@ const Hero = () => {
         
         <div className="bg-black/30 backdrop-blur-md rounded-2xl p-6 mb-8 md:mb-10 border border-white/20">
           <p className="text-lg md:text-2xl lg:text-3xl text-white mb-0 max-w-3xl mx-auto animate-fade-in leading-relaxed px-4 drop-shadow-lg font-medium">
-            Earn up to <span className="text-dcl-ruby font-bold text-xl md:text-3xl bg-white/10 px-2 py-1 rounded">8 Credits weekly</span> in Decentraland 
-            to customize your avatar with Wearables and Emotes
+            Decentraland is a <span className="text-dcl-ruby font-bold text-xl md:text-3xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create. Marketplace Credits are your reward for showing up.
           </p>
         </div>
         
