@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 const Hero = () => {
@@ -8,10 +9,10 @@ const Hero = () => {
           {/* Left side - Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-dcl-ruby/40 to-dcl-orange/40 rounded-full border-2 border-dcl-ruby/60 mb-6 md:mb-8 animate-fade-in backdrop-blur-md shadow-lg">
-              <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg">🔥 New Beta Program Live</span>
+              <span className="text-white font-bold text-base md:text-xl drop-shadow-lg">🔥 New Beta Program Live</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 leading-tight animate-fade-in drop-shadow-2xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 md:mb-8 leading-tight animate-fade-in drop-shadow-2xl">
               Marketplace
               <span className="bg-gradient-to-r from-dcl-ruby via-dcl-orange to-dcl-yellow bg-clip-text text-transparent drop-shadow-2xl">
                 {" "}Credits
@@ -19,8 +20,8 @@ const Hero = () => {
             </h1>
             
             <div className="bg-black/30 backdrop-blur-md rounded-2xl p-6 mb-8 md:mb-10 border border-white/20">
-              <p className="text-lg md:text-2xl lg:text-2xl text-white mb-0 max-w-2xl mx-auto lg:mx-0 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium">
-                Marketplace Credits are your rewards for engaging in Decentraland, a <span className="text-dcl-ruby font-bold text-xl md:text-2xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create.
+              <p className="text-xl md:text-3xl lg:text-3xl text-white mb-0 max-w-2xl mx-auto lg:mx-0 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium">
+                Marketplace Credits are your rewards for engaging in Decentraland, a <span className="text-dcl-ruby font-bold text-2xl md:text-3xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create.
               </p>
             </div>
             
@@ -50,3 +51,4 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
+
