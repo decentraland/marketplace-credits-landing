@@ -51,18 +51,16 @@ const VideoSection = () => {
           </p>
         </div>
         
-        <div className="bg-gradient-to-br from-dcl-ruby/30 to-dcl-orange/30 rounded-2xl md:rounded-3xl p-6 md:p-8 border-2 border-dcl-ruby/50 backdrop-blur-md shadow-xl">
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
-            <iframe
-              ref={videoRef}
-              className="absolute top-0 left-0 w-full h-full rounded-xl md:rounded-2xl shadow-2xl"
-              src={videoSrc}
-              title="Marketplace Credits Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+          <iframe
+            ref={videoRef}
+            className="absolute top-0 left-0 w-full h-full rounded-xl md:rounded-2xl shadow-2xl"
+            src={videoSrc}
+            title="Marketplace Credits Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>
