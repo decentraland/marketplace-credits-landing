@@ -31,7 +31,7 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start items-center animate-fade-in mb-8 md:mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start items-center animate-fade-in">
               <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/30 drop-shadow-lg" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
                 <Download className="mr-2 md:mr-3 h-5 w-5 md:h-6 md:w-6" />
                 Download Decentraland
@@ -42,30 +42,15 @@ const Hero = () => {
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
               </Button>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center lg:text-left">
-              <div className="bg-gradient-to-br from-dcl-ruby/40 to-dcl-orange/40 backdrop-blur-md rounded-2xl p-6 md:p-8 border-2 border-dcl-ruby/60 hover:border-dcl-ruby/80 transition-all duration-300 hover:scale-105 shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">8</div>
-                <div className="text-white text-base md:text-lg drop-shadow-md font-medium">Credits per week</div>
-              </div>
-              <div className="bg-gradient-to-br from-dcl-orange/40 to-dcl-yellow/40 backdrop-blur-md rounded-2xl p-6 md:p-8 border-2 border-dcl-orange/60 hover:border-dcl-orange/80 transition-all duration-300 hover:scale-105 shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">64</div>
-                <div className="text-white text-base md:text-lg drop-shadow-md font-medium">Total Credits available</div>
-              </div>
-              <div className="bg-gradient-to-br from-dcl-yellow/40 to-dcl-lavender/40 backdrop-blur-md rounded-2xl p-6 md:p-8 border-2 border-dcl-yellow/60 hover:border-dcl-yellow/80 transition-all duration-300 hover:scale-105 shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">FREE</div>
-                <div className="text-white text-base md:text-lg drop-shadow-md font-medium">Wearables & Emotes</div>
-              </div>
-            </div>
           </div>
 
-          {/* Right side - Avatar Image */}
+          {/* Right side - Avatar Image (Made Bigger) */}
           <div className="flex justify-center lg:justify-end items-center order-1 lg:order-2 animate-fade-in">
             <div className="relative">
               <img 
                 src="/lovable-uploads/2d2485d1-5a3d-4a90-89e0-5758004bf19c.png" 
                 alt="Decentraland Avatar with Shopping Bags" 
-                className="w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+                className="w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
               />
               {/* Subtle glow effect behind the avatar */}
               <div className="absolute inset-0 bg-gradient-to-r from-dcl-purple/20 to-dcl-lavender/20 rounded-full blur-3xl -z-10"></div>

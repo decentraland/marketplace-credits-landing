@@ -1,5 +1,6 @@
 
 import Hero from "@/components/Hero";
+import ProgramStats from "@/components/ProgramStats";
 import VideoSection from "@/components/VideoSection";
 import ProgramDetails from "@/components/ProgramDetails";
 import FAQ from "@/components/FAQ";
@@ -29,6 +30,7 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <Hero />
+        <ProgramStats />
         <VideoSection />
         <ProgramDetails />
         <FAQ />
