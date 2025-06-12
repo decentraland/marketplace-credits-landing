@@ -1,10 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 pt-2 pb-6 overflow-hidden">
       <div className="relative z-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
