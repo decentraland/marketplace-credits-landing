@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 const Hero = () => {
@@ -39,7 +40,7 @@ const Hero = () => {
           {/* Right side - Avatar Image (Made Even Bigger) */}
           <div className="flex justify-center lg:justify-end items-center order-1 lg:order-2 animate-fade-in">
             <div className="relative">
-              <img src="/lovable-uploads/2d2485d1-5a3d-4a90-89e0-5758004bf19c.png" alt="Decentraland Avatar with Shopping Bags" className="w-[800px] h-[800px] md:w-[800px] md:h-[800px] lg:w-[900px] lg:h-[900px] xl:w-[900px] xl:h-[900px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
+              <img src="/lovable-uploads/3ff4c0ad-bf60-4647-82d8-d53f83fc97a2.png" alt="Decentraland Avatar with Shopping Bags" className="w-[800px] h-[800px] md:w-[800px] md:h-[800px] lg:w-[900px] lg:h-[900px] xl:w-[900px] xl:h-[900px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
               {/* Subtle glow effect behind the avatar */}
               <div className="absolute inset-0 bg-gradient-to-r from-dcl-purple/20 to-dcl-lavender/20 rounded-full blur-3xl -z-10"></div>
             </div>
