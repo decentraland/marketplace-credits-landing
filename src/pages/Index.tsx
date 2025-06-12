@@ -1,5 +1,6 @@
 
 import Hero from "@/components/Hero";
+import VideoSection from "@/components/VideoSection";
 import ProgramDetails from "@/components/ProgramDetails";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
@@ -11,7 +12,6 @@ import { useEffect } from "react";
 const Index = () => {
   const { page } = useAnalytics();
 
-  
   useEffect(() => {
     page('Home', {
       page_title: 'Credit Boost Decentraland Land',
@@ -29,6 +29,7 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <Hero />
+        <VideoSection />
         <ProgramDetails />
         <FAQ />
         <FinalCTA />
