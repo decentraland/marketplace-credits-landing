@@ -20,7 +20,7 @@ const Index = () => {
   }, [page]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#CC49D3] to-[#5E1A99] relative">
+    <div className="min-h-screen bg-black relative">
       {/* Global animated shopping bags background */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <AnimatedShoppingBags />
