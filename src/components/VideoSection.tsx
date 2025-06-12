@@ -1,3 +1,4 @@
+
 import { useRef, useEffect, useState } from 'react';
 
 const VideoSection = () => {
@@ -7,16 +8,16 @@ const VideoSection = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Use a lower threshold (0.5) so video doesn't pause/restart too aggressively
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        // Video must be fully visible to start playing
+        if (entry.isIntersecting && entry.intersectionRatio >= 1.0) {
           setIsInView(true);
-        } else if (entry.intersectionRatio < 0.3) {
-          // Only pause when video is mostly out of view
+        } else {
+          // Pause when video goes out of full view
           setIsInView(false);
         }
       },
       {
-        threshold: [0.3, 0.5], // Multiple thresholds for better control
+        threshold: 1.0, // Video must be 100% visible to trigger
         rootMargin: '0px'
       }
     );
@@ -33,8 +34,10 @@ const VideoSection = () => {
     };
   }, []);
 
-  // Keep autoplay enabled when in view, but don't force restart when out of view
-  const videoSrc = "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=1&mute=1";
+  // Update the iframe src to include autoplay when in view, pause when out of view
+  const videoSrc = isInView 
+    ? "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=1&mute=1"
+    : "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=0";
 
   return (
     <section className="py-16 md:py-24 px-4">
