@@ -12,8 +12,24 @@ const ProgramDetails = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
-          <div className="space-y-6 md:space-y-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-20">
+          {/* Left column with avatar showcase */}
+          <div className="lg:col-span-1 flex justify-center items-start">
+            <div className="bg-gradient-to-br from-dcl-lavender/30 to-dcl-purple/30 rounded-2xl md:rounded-3xl p-6 md:p-8 border-2 border-dcl-lavender/50 backdrop-blur-md shadow-xl hover:scale-105 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/15282d58-6e1d-45ca-a93e-b6925ca2be90.png" 
+                alt="Customized Decentraland Avatar" 
+                className="w-full max-w-sm mx-auto drop-shadow-2xl"
+              />
+              <div className="text-center mt-4">
+                <p className="text-white font-bold text-lg drop-shadow-lg">Your Avatar, Your Style</p>
+                <p className="text-white/80 text-sm drop-shadow-md">Customize with Credits</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right column with existing content */}
+          <div className="lg:col-span-2 space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-ruby/50 to-dcl-orange/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-ruby/70 hover:border-dcl-ruby/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
                 <span className="text-3xl md:text-4xl mr-3 md:mr-4">💰</span>
@@ -35,9 +51,7 @@ const ProgramDetails = () => {
                 at 1 MANA or more. Perfect for customizing your avatar!
               </p>
             </div>
-          </div>
-          
-          <div className="space-y-6 md:space-y-10">
+
             <div className="bg-gradient-to-br from-dcl-yellow/50 to-dcl-lavender/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-yellow/70 hover:border-dcl-yellow/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
                 <span className="text-3xl md:text-4xl mr-3 md:mr-4">⏰</span>
