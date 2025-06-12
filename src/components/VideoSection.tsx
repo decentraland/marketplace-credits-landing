@@ -8,9 +8,12 @@ const VideoSection = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Only trigger when the video is fully visible (threshold: 1.0)
+        // Trigger when the video is fully visible (threshold: 1.0)
         if (entry.isIntersecting && entry.intersectionRatio >= 1.0) {
           setIsInView(true);
+        } else {
+          // Video is out of view, pause it
+          setIsInView(false);
         }
       },
       {
@@ -31,10 +34,10 @@ const VideoSection = () => {
     };
   }, []);
 
-  // Update the iframe src to include autoplay when in view
+  // Update the iframe src to include autoplay when in view, and pause when out of view
   const videoSrc = isInView 
     ? "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=1&mute=1"
-    : "https://www.youtube.com/embed/ZVHMPBWea8I";
+    : "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=0";
 
   return (
     <section className="py-16 md:py-24 px-4">
