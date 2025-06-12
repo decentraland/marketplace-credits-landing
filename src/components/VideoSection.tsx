@@ -1,5 +1,41 @@
 
+import { useRef, useEffect, useState } from 'react';
+
 const VideoSection = () => {
+  const videoRef = useRef<HTMLIFrameElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Only trigger when the video is fully visible (threshold: 1.0)
+        if (entry.isIntersecting && entry.intersectionRatio >= 1.0) {
+          setIsInView(true);
+        }
+      },
+      {
+        threshold: 1.0, // Video must be 100% visible
+        rootMargin: '0px'
+      }
+    );
+
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      observer.observe(videoElement.parentElement || videoElement);
+    }
+
+    return () => {
+      if (videoElement) {
+        observer.unobserve(videoElement.parentElement || videoElement);
+      }
+    };
+  }, []);
+
+  // Update the iframe src to include autoplay when in view
+  const videoSrc = isInView 
+    ? "https://www.youtube.com/embed/ZVHMPBWea8I?autoplay=1&mute=1"
+    : "https://www.youtube.com/embed/ZVHMPBWea8I";
+
   return (
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -15,8 +51,9 @@ const VideoSection = () => {
         <div className="bg-gradient-to-br from-dcl-ruby/30 to-dcl-orange/30 rounded-2xl md:rounded-3xl p-6 md:p-8 border-2 border-dcl-ruby/50 backdrop-blur-md shadow-xl">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
             <iframe
+              ref={videoRef}
               className="absolute top-0 left-0 w-full h-full rounded-xl md:rounded-2xl shadow-2xl"
-              src="https://www.youtube.com/embed/ZVHMPBWea8I"
+              src={videoSrc}
               title="Marketplace Credits Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
