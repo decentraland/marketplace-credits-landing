@@ -1,4 +1,5 @@
 
+
 const ProgramDetails = () => {
   return <section id="details" className="py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -10,7 +11,7 @@ const ProgramDetails = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
           <div className="space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-ruby/50 to-dcl-orange/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-ruby/70 hover:border-dcl-ruby/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
                 Build Your Digital Identity
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
@@ -18,28 +19,28 @@ const ProgramDetails = () => {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-dcl-orange/50 to-dcl-yellow/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-orange/70 hover:border-dcl-orange/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
-                DCL is a vibe
-              </h3>
-              <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                Jump into social events, parties, and mini-games—no grinding or pressure.
-              </p>
-            </div>
-          </div>
-          
-          <div className="space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-yellow/50 to-dcl-lavender/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-yellow/70 hover:border-dcl-yellow/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
                 Creativity has no bounds
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
                 Explore a 3D world built by people from all over the globe.
               </p>
             </div>
+          </div>
+          
+          <div className="space-y-6 md:space-y-10">
+            <div className="bg-gradient-to-br from-dcl-orange/50 to-dcl-yellow/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-orange/70 hover:border-dcl-orange/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
+                DCL is a vibe
+              </h3>
+              <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
+                Jump into social events, parties, and mini-games—no grinding or pressure.
+              </p>
+            </div>
             
             <div className="bg-gradient-to-br from-dcl-lavender/50 to-dcl-purple/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-lavender/70 hover:border-dcl-lavender/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
                 Community Ownership
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
@@ -54,3 +55,4 @@ const ProgramDetails = () => {
     </section>;
 };
 export default ProgramDetails;
+
