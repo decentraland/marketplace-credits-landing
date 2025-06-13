@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import ProgramStats from "@/components/ProgramStats";
 import VideoSection from "@/components/VideoSection";
@@ -11,7 +10,7 @@ import useAnalytics from "@/hooks/use-analytics";
 import { useEffect } from "react";
 
 const Index = () => {
-  const { page } = useAnalytics();
+  const { page, track } = useAnalytics();
 
   useEffect(() => {
     page('Home', {
@@ -29,11 +28,11 @@ const Index = () => {
       
       <div className="relative z-10">
         <Header />
-        <Hero />
+        <Hero onTrack={track} />
         <ProgramStats />
         <VideoSection />
         <ProgramDetails />
-        <FinalCTA />
+        <FinalCTA onTrack={track} />
         <FAQ />
       </div>
     </div>

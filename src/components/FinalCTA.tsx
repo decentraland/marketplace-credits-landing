@@ -1,9 +1,19 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
-const FinalCTA = () => {
+interface FinalCTAProps {
+  onTrack: (eventName: string, properties?: Record<string, any>) => void;
+}
+
+const FinalCTA = ({ onTrack }: FinalCTAProps) => {
+  const handleDownloadClick = () => {
+    onTrack('Download Button Clicked', { 
+      button_location: 'final_cta',
+      button_text: 'Download Decentraland'
+    });
+    window.open('https://decentraland.org/download', '_blank');
+  };
+
   return (
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
@@ -20,7 +30,7 @@ const FinalCTA = () => {
           </div>
           
           <div className="flex justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/40 drop-shadow-lg" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
+            <Button size="lg" className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/40 drop-shadow-lg" onClick={handleDownloadClick}>
               <Download className="mr-3 md:mr-4 h-6 w-6 md:h-7 md:w-7" />
               Download Decentraland
             </Button>

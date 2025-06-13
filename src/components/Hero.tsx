@@ -1,7 +1,27 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
-const Hero = () => {
+
+interface HeroProps {
+  onTrack: (eventName: string, properties?: Record<string, any>) => void;
+}
+
+const Hero = ({ onTrack }: HeroProps) => {
+  const handleDownloadClick = () => {
+    onTrack('Download Button Clicked', { 
+      button_location: 'hero',
+      button_text: 'Download Decentraland'
+    });
+    window.open('https://decentraland.org/download', '_blank');
+  };
+
+  const handleLearnMoreClick = () => {
+    onTrack('Learn More Button Clicked', { 
+      button_location: 'hero',
+      button_text: 'Learn More'
+    });
+    window.open('https://decentraland.org/blog/announcements/marketplace-credits-earn-weekly-rewards-to-power-up-your-look', '_blank');
+  };
+
   return <section className="relative min-h-screen flex items-center justify-center px-4 pt-4 pb-6 overflow-hidden">
       <div className="relative z-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -23,12 +43,12 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start items-center animate-fade-in">
-              <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/30 drop-shadow-lg" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
+              <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/30 drop-shadow-lg" onClick={handleDownloadClick}>
                 <Download className="mr-2 md:mr-3 h-5 w-5 md:h-6 md:w-6" />
                 Download Decentraland
               </Button>
               
-              <Button variant="outline" size="lg" onClick={() => window.open('https://decentraland.org/blog/announcements/marketplace-credits-earn-weekly-rewards-to-power-up-your-look', '_blank')} className="w-full sm:w-auto border-2 border-white/80 bg-white/10 hover:bg-white/20 hover:border-white text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-md font-bold drop-shadow-lg">
+              <Button variant="outline" size="lg" onClick={handleLearnMoreClick} className="w-full sm:w-auto border-2 border-white/80 bg-white/10 hover:bg-white/20 hover:border-white text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl rounded-2xl transition-all duration-300 hover:scale-105 backdrop-blur-md font-bold drop-shadow-lg">
                 Learn More
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
               </Button>
