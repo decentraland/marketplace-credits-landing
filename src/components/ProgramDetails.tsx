@@ -21,7 +21,7 @@ const ProgramDetails = () => {
             
             <div className="bg-gradient-to-br from-dcl-yellow/50 to-dcl-lavender/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-yellow/70 hover:border-dcl-yellow/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
-                Creativity has no bounds
+                Step Into Something Bigger
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
                 Explore a 3D world built by people from all over the globe.
@@ -32,7 +32,7 @@ const ProgramDetails = () => {
           <div className="space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-orange/50 to-dcl-yellow/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-orange/70 hover:border-dcl-orange/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
-                DCL is a vibe
+                Play Your Way
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
                 Jump into social events, parties, and mini-games—no grinding or pressure.
@@ -41,7 +41,7 @@ const ProgramDetails = () => {
             
             <div className="bg-gradient-to-br from-dcl-lavender/50 to-dcl-purple/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-lavender/70 hover:border-dcl-lavender/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
-                Community Ownership
+                Own your experience
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
                 It's fun, surprising, and always evolving—because it's shaped by the people in it.
