@@ -17,12 +17,8 @@ const ProgramDetails = () => {
             </div>
             
             <div className="bg-gradient-to-br from-dcl-yellow/50 to-dcl-lavender/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-yellow/70 hover:border-dcl-yellow/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">
-                Step Into Something Bigger
-              </h3>
-              <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                Explore a 3D world built by people from all over the globe.
-              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg">Find Your People</h3>
+              <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">Whether you're here to party, build, or just be —you’ll fit right in.</p>
             </div>
           </div>
           
