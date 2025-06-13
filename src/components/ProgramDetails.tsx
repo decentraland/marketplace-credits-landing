@@ -1,15 +1,9 @@
-
 const ProgramDetails = () => {
-  return (
-    <section id="details" className="py-16 md:py-24 px-4">
+  return <section id="details" className="py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 md:mb-20 bg-black/20 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 px-4 drop-shadow-2xl">
-            How Marketplace Credits Work
-          </h2>
-          <p className="text-lg md:text-2xl text-white max-w-4xl mx-auto leading-relaxed px-4 drop-shadow-lg font-medium">
-            A new rewards system designed to acknowledge community engagement and help you personalize your avatar
-          </p>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 px-4 drop-shadow-2xl">Why Jump Into Decentraland</h2>
+          
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
@@ -62,17 +56,8 @@ const ProgramDetails = () => {
           </div>
         </div>
         
-        <div className="bg-gradient-to-r from-dcl-ruby/50 via-dcl-orange/50 to-dcl-yellow/50 rounded-2xl md:rounded-3xl p-8 md:p-12 border-2 border-dcl-ruby/70 text-center backdrop-blur-md shadow-xl">
-          <h3 className="text-2xl md:text-4xl font-bold text-white mb-6 md:mb-8 drop-shadow-lg">Why This Matters</h3>
-          <p className="text-lg md:text-2xl text-white max-w-5xl mx-auto leading-relaxed px-4 drop-shadow-lg font-medium">
-            Decentraland is all about <span className="text-dcl-yellow font-bold bg-black/30 px-2 py-1 rounded">expression, connection, and creativity</span>. 
-            Marketplace Credits lower the barrier to participating in that world—giving every user a little more to play with. 
-            It's about showing up, having fun, and getting rewarded with pocket money to try new things.
-          </p>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProgramDetails;
