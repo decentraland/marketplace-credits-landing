@@ -1,3 +1,4 @@
+
 const ProgramDetails = () => {
   return <section id="details" className="py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -10,23 +11,19 @@ const ProgramDetails = () => {
           <div className="space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-ruby/50 to-dcl-orange/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-ruby/70 hover:border-dcl-ruby/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
-                <span className="text-3xl md:text-4xl mr-3 md:mr-4">💰</span>
-                What Are They Worth?
+                Build Your Digital Identity
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                Each Marketplace Credit equals <span className="text-dcl-yellow font-bold text-lg md:text-xl bg-black/30 px-2 py-1 rounded">1 MANA</span> in purchasing power. 
-                Use them alone or combine with other payment methods for larger purchases.
+                Dress up your avatar, collect new looks, and express yourself however you want.
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-dcl-orange/50 to-dcl-yellow/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-orange/70 hover:border-dcl-orange/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
-                <span className="text-3xl md:text-4xl mr-3 md:mr-4">🎯</span>
-                What Can You Buy?
+                DCL is a vibe
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                Credits work for primary sales of <span className="text-dcl-yellow font-bold text-lg md:text-xl bg-black/30 px-2 py-1 rounded">Polygon Wearables and Emotes</span> priced 
-                at 1 MANA or more. Perfect for customizing your avatar!
+                Jump into social events, parties, and mini-games—no grinding or pressure.
               </p>
             </div>
           </div>
@@ -34,23 +31,19 @@ const ProgramDetails = () => {
           <div className="space-y-6 md:space-y-10">
             <div className="bg-gradient-to-br from-dcl-yellow/50 to-dcl-lavender/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-yellow/70 hover:border-dcl-yellow/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
-                <span className="text-3xl md:text-4xl mr-3 md:mr-4">⏰</span>
-                Limited Time Beta
+                Creativity has no bounds
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                This is an <span className="text-dcl-ruby font-bold text-lg md:text-xl bg-black/30 px-2 py-1 rounded">8-week beta program</span> running until July 13. 
-                Credits expire 2 weeks after the beta ends, so use them while you can!
+                Explore a 3D world built by people from all over the globe.
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-dcl-lavender/50 to-dcl-purple/50 rounded-2xl md:rounded-3xl p-6 md:p-10 border-2 border-dcl-lavender/70 hover:border-dcl-lavender/90 transition-all duration-300 backdrop-blur-md hover:scale-105 shadow-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 flex items-center drop-shadow-lg">
-                <span className="text-3xl md:text-4xl mr-3 md:mr-4">🎮</span>
-                How to Earn
+                Community Ownership
               </h3>
               <p className="text-white leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
-                Complete simple weekly goals like <span className="text-dcl-yellow font-bold text-lg md:text-xl bg-black/30 px-2 py-1 rounded">logging in and attending events</span>. 
-                No grinding required—just show up and have fun!
+                It's fun, surprising, and always evolving—because it's shaped by the people in it.
               </p>
             </div>
           </div>
