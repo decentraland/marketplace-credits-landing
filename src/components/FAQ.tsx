@@ -45,27 +45,27 @@ const FAQ = () => {
   return (
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12 md:mb-20 bg-black/20 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+        <div className="text-center mb-12 md:mb-20">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 px-4 drop-shadow-2xl">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg md:text-2xl text-white px-4 drop-shadow-lg font-medium">
+          <p className="text-lg md:text-2xl text-white/80 px-4 drop-shadow-lg font-medium">
             Everything you need to know about Marketplace Credits
           </p>
         </div>
         
-        <div className="bg-gradient-to-br from-dcl-ruby/40 to-dcl-orange/40 backdrop-blur-md rounded-2xl md:rounded-3xl border-2 border-dcl-ruby/60 p-6 md:p-10 shadow-xl">
+        <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4 md:space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border-2 border-white/30 rounded-xl md:rounded-2xl px-4 md:px-8 bg-gradient-to-r from-black/40 to-black/30 hover:from-black/50 hover:to-black/40 transition-all duration-300 backdrop-blur-md shadow-lg"
+                className="border border-white/20 rounded-xl md:rounded-2xl px-6 md:px-8 bg-black/30 backdrop-blur-md hover:bg-black/40 transition-all duration-300 shadow-lg"
               >
                 <AccordionTrigger className="text-white hover:text-dcl-yellow text-left font-bold py-6 md:py-8 text-base md:text-lg drop-shadow-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white pb-6 md:pb-8 leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
+                <AccordionContent className="text-white/90 pb-6 md:pb-8 leading-relaxed text-base md:text-lg drop-shadow-md font-medium">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
