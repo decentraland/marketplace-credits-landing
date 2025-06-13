@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-
 const FinalCTA = () => {
-  return (
-    <section className="py-16 md:py-24 px-4">
+  return <section className="py-16 md:py-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <div className="space-y-8 md:space-y-12">
           <div>
@@ -13,17 +10,13 @@ const FinalCTA = () => {
             </h2>
             
             <p className="text-lg md:text-2xl lg:text-3xl text-white/90 mb-0 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow-lg font-medium">
-              Jump into Decentraland now and start earning up to <span className="text-dcl-yellow font-bold">64 free Credits</span> 
+              Jump into Decentraland now and start earning up to <span className="text-dcl-yellow font-bold">64 free Credits </span> 
               to customize your look with amazing Wearables and Emotes
             </p>
           </div>
           
           <div className="flex justify-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/40 drop-shadow-lg" 
-              onClick={() => window.open('https://decentraland.org/download', '_blank')}
-            >
+            <Button size="lg" className="bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/40 drop-shadow-lg" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
               <Download className="mr-3 md:mr-4 h-6 w-6 md:h-7 md:w-7" />
               Download Decentraland
             </Button>
@@ -48,8 +41,6 @@ const FinalCTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FinalCTA;
