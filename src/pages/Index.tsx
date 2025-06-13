@@ -33,8 +33,8 @@ const Index = () => {
         <ProgramStats />
         <VideoSection />
         <ProgramDetails />
-        <FAQ />
         <FinalCTA />
+        <FAQ />
       </div>
     </div>
   );
