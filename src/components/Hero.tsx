@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 const Hero = () => {
@@ -19,11 +17,9 @@ const Hero = () => {
               </span>
             </h1>
             
-            <div className="bg-black/30 backdrop-blur-md rounded-2xl p-6 mb-8 md:mb-10 border border-white/20">
-              <p className="text-xl md:text-3xl lg:text-3xl text-white mb-0 max-w-2xl mx-auto lg:mx-0 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium">
-                Marketplace Credits are your rewards for engaging in Decentraland, a <span className="text-dcl-ruby font-bold text-2xl md:text-3xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create.
-              </p>
-            </div>
+            <p className="text-xl md:text-3xl lg:text-3xl text-white mb-8 md:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium">
+              Marketplace Credits are your rewards for engaging in Decentraland, a <span className="text-dcl-ruby font-bold text-2xl md:text-3xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create.
+            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start items-center animate-fade-in">
               <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-dcl-ruby to-dcl-orange hover:from-dcl-ruby/90 hover:to-dcl-orange/90 text-white px-6 md:px-10 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border-2 border-white/30 drop-shadow-lg" onClick={() => window.open('https://decentraland.org/download', '_blank')}>
@@ -51,4 +47,3 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
-
