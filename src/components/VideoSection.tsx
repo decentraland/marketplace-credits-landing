@@ -33,9 +33,7 @@ const VideoSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 drop-shadow-2xl">How Marketplace Credits Work</h2>
-          <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg font-medium">
-            Watch how Marketplace Credits work and discover all the amazing ways to customize your avatar
-          </p>
+          
         </div>
         
         <div className="relative w-full" style={{
