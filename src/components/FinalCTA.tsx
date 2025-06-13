@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+
 const FinalCTA = () => {
-  return <section className="py-16 md:py-24 px-4">
+  return (
+    <section className="py-16 md:py-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <div className="space-y-8 md:space-y-12">
           <div>
@@ -10,8 +13,8 @@ const FinalCTA = () => {
             </h2>
             
             <p className="text-lg md:text-2xl lg:text-3xl text-white/90 mb-0 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow-lg font-medium">
-              Jump into Decentraland now and start earning up to <span className="text-dcl-yellow font-bold">64 free Credits </span> 
-              to customize your look with amazing Wearables and Emotes
+              Jump into Decentraland now and start earning up to <span className="text-dcl-yellow font-bold">64 free Credits </span> 
+              to customize your look with community-made Wearables and Emotes
             </p>
           </div>
           
@@ -41,6 +44,8 @@ const FinalCTA = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default FinalCTA;
