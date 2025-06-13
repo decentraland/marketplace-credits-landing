@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -32,9 +33,9 @@ const FinalCTA = () => {
               <div className="text-white/80 text-base md:text-lg drop-shadow-md">Limited 8-week program</div>
             </div>
             <div className="text-center space-y-3">
-              <div className="text-3xl md:text-4xl">💎</div>
+              <div className="text-3xl md:text-4xl">🎨</div>
               <div className="text-white font-bold text-lg md:text-xl drop-shadow-md">Support Creators</div>
-              <div className="text-white/80 text-base md:text-lg drop-shadow-md">Help artists thrive</div>
+              <div className="text-white/80 text-base md:text-lg drop-shadow-md">Help designers thrive</div>
             </div>
             <div className="text-center space-y-3">
               <div className="text-3xl md:text-4xl">✨</div>
@@ -49,3 +50,4 @@ const FinalCTA = () => {
 };
 
 export default FinalCTA;
+
