@@ -1,4 +1,3 @@
-
 const Header = () => {
   return (
     <header className="p-4 md:p-6 md:px-[65px] rounded-md md:py-[19px]">

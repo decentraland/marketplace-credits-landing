@@ -30,7 +30,7 @@ const Index = () => {
         <Header />
         <Hero onTrack={track} />
         <ProgramStats />
-        <VideoSection />
+        <VideoSection onTrack={track} />
         <ProgramDetails />
         <FinalCTA onTrack={track} />
         <FAQ />

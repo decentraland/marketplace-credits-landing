@@ -99,3 +99,56 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Make decentraland-ui2 DownloadButton bigger - comprehensive selectors */
+button[class*="DownloadButton"],
+button[class*="download-button"],
+[class*="DownloadButton"] button,
+[class*="download-button"] button,
+div[class*="DownloadButton"] button,
+div[class*="download-button"] button,
+.MuiButton-root[class*="DownloadButton"],
+.MuiButton-root[class*="download-button"],
+.css-*[class*="DownloadButton"] button,
+.css-*[class*="download-button"] button {
+  padding: 1.5rem 1.5rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  border-radius: 1rem !important;
+  min-height: 4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+  transform: scale(1) !important;
+}
+
+button[class*="DownloadButton"]:hover,
+button[class*="download-button"]:hover,
+[class*="DownloadButton"] button:hover,
+[class*="download-button"] button:hover,
+div[class*="DownloadButton"] button:hover,
+div[class*="download-button"] button:hover,
+.MuiButton-root[class*="DownloadButton"]:hover,
+.MuiButton-root[class*="download-button"]:hover,
+.css-*[class*="DownloadButton"] button:hover,
+.css-*[class*="download-button"] button:hover {
+  transform: scale(1.05) !important;
+}
+
+@media (min-width: 768px) {
+  button[class*="DownloadButton"],
+  button[class*="download-button"],
+  [class*="DownloadButton"] button,
+  [class*="download-button"] button,
+  div[class*="DownloadButton"] button,
+  div[class*="download-button"] button,
+  .MuiButton-root[class*="DownloadButton"],
+  .MuiButton-root[class*="download-button"],
+  .css-*[class*="DownloadButton"] button,
+  .css-*[class*="download-button"] button {
+    padding: 2rem 2.5rem !important;
+    font-size: 1.25rem !important;
+    min-height: 4.5rem !important;
+  }
+}
