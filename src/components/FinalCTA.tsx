@@ -7,12 +7,16 @@ interface FinalCTAProps {
 
 const FinalCTA = ({ onTrack }: FinalCTAProps) => {
   const handleClickDownload = useCallback((event: React.MouseEvent<HTMLButtonElement>, trackingData: any) => {
-    onTrack('Download Button Clicked', {
+    if(!trackingData?.url) {
+      return;
+    }
+    
+    onTrack('Download', {
       button_location: 'final_cta',
       button_text: 'Download Decentraland',
-      download_type: trackingData?.type || 'default',
-      download_url: trackingData?.url || 'https://decentraland.org/download',
-      track_uuid: trackingData?.track_uuid || `download-${Date.now()}`
+      download_type: trackingData?.type,
+      href: trackingData?.url,
+      track_uuid: trackingData?.track_uuid,
     });
   }, [onTrack]);
 
