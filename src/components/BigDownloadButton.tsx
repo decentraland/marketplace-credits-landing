@@ -5,7 +5,7 @@ interface BigDownloadButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, options: {
     type: string;
     track_uuid?: string;
-    url: string;
+    url: string; 
   }) => void;
   label?: string;
   trackingId?: string;
