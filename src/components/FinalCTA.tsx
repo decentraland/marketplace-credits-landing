@@ -30,15 +30,16 @@ const FinalCTA = ({ onTrack }: FinalCTAProps) => {
             </h2>
             
             <p className="text-lg md:text-2xl lg:text-3xl text-white/90 mb-0 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow-lg font-medium">
-              Jump into Decentraland now and start earning up to <span className="text-dcl-yellow font-bold">64 free Credits </span> 
-              to customize your look with community-made Wearables and Emotes
+              Start earning free Marketplace Credits just by logging in, exploring, and completing simple goals.
+              <br /> <br />
+              Trade them for community-made Wearables and Emotes to make your avatar your own.
             </p>
           </div>
           
           <div className="flex justify-center">
             <BigDownloadButton
               onClick={handleClickDownload}
-              label="Download Decentraland"
+              label="START EARNING"
               trackingId="final-cta-download"
             />
           </div>

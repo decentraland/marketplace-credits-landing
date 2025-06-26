@@ -47,14 +47,19 @@ const Hero = ({ onTrack }: HeroProps) => {
             </h1>
             
             <p className="text-xl md:text-3xl lg:text-3xl text-white mb-8 md:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium">
-              Marketplace Credits are your rewards for engaging in Decentraland, a <span className="text-dcl-ruby font-bold text-2xl md:text-3xl bg-white/10 px-2 py-1 rounded">social virtual world</span> where you can connect, explore, and create.
+              <span className="text-dcl-ruby font-bold text-2xl md:text-3xl bg-white/10 px-2 py-1 rounded">You've got unclaimed Credits</span>
+              <br />
+              Show up. Check in. Stack your rewards before they're gone.
+              <br />
+              <br />
+              🕒 This week's batch expires soon—don't miss it. 
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-12 md:gap-16 justify-center lg:justify-start items-center animate-fade-in">
+            <div className="flex flex-col sm:flex-row gap-8 md:gap-10 justify-center lg:justify-start items-center animate-fade-in">
               <div className="flex-shrink-0">
                 <BigDownloadButton
                   onClick={handleClickDownload}
-                  label="Download Decentraland"
+                  label="Start Earning"
                   trackingId="hero-download"
                 />
               </div>

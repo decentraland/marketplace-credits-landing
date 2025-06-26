@@ -76,11 +76,16 @@ const VideoSection = ({ onTrack }: VideoSectionProps) => {
             allowFullScreen 
           />
         </div>
+        <p className="text-xl md:text-3xl lg:text-3xl text-white mb-8 md:mb-10 animate-fade-in leading-relaxed px-4 lg:px-0 drop-shadow-lg font-medium text-center mt-8 md:mt-12">
+          Earn Credits by doing the things you're already here for—logging in, exploring, attending events, checking out profiles.
+          <br />
+          Each small action = more rewards. No spending required.
+        </p>
 
         <div className="flex justify-center mt-8 md:mt-12">
           <BigDownloadButton
             onClick={handleClickDownload}
-            label="Download Decentraland"
+            label="START EARNING"
             trackingId="video-section-download"
           />
         </div>
