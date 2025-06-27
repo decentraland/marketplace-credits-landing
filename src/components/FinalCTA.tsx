@@ -1,4 +1,4 @@
-import BigDownloadButton from './BigDownloadButton';
+import { JumpIn } from 'decentraland-ui2';
 import { useCallback } from "react";
 
 interface FinalCTAProps {
@@ -6,17 +6,11 @@ interface FinalCTAProps {
 }
 
 const FinalCTA = ({ onTrack }: FinalCTAProps) => {
-  const handleClickDownload = useCallback((event: React.MouseEvent<HTMLButtonElement>, trackingData: any) => {
-    if(!trackingData?.url) {
-      return;
-    }
-    
-    onTrack('Download', {
+  const handleTrack = useCallback((data: Record<string, unknown>) => {
+    onTrack('JumpIn Clicked', {
       button_location: 'final_cta',
-      button_text: 'Download Decentraland',
-      download_type: trackingData?.type,
-      href: trackingData?.url,
-      track_uuid: trackingData?.track_uuid,
+      button_text: 'START EARNING',
+      ...data
     });
   }, [onTrack]);
 
@@ -37,11 +31,27 @@ const FinalCTA = ({ onTrack }: FinalCTAProps) => {
           </div>
           
           <div className="flex justify-center">
-            <BigDownloadButton
-              onClick={handleClickDownload}
-              label="START EARNING"
-              trackingId="final-cta-download"
-            />
+            <div className="flex-shrink-0">
+              <JumpIn
+                variant="button"
+                buttonText="START EARNING"
+                onTrack={handleTrack}
+                buttonProps={{
+                  size: "large",
+                  style: {
+                    padding: '24px 24px',
+                    fontSize: '18px',
+                    minHeight: '60px'
+                  },
+                  className: "jumpin-button-large"
+                }}
+                modalProps={{
+                  title: "Download Decentraland",
+                  description: "Join the metaverse and start earning Marketplace Credits",
+                  buttonLabel: "Download Now"
+                }}
+              />
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import BigDownloadButton from './BigDownloadButton';
+import { JumpIn } from 'decentraland-ui2';
 import { useCallback } from "react";
 
 interface HeroProps {
@@ -16,17 +16,11 @@ const Hero = ({ onTrack }: HeroProps) => {
     window.open('https://decentraland.org/blog/announcements/marketplace-credits-earn-weekly-rewards-to-power-up-your-look', '_blank');
   };
 
-  const handleClickDownload = useCallback((event: React.MouseEvent<HTMLButtonElement>, trackingData: any) => {
-    if(!trackingData?.url) {
-      return;
-    }
-
-    onTrack('Download', {
+  const handleTrack = useCallback((data: Record<string, unknown>) => {
+    onTrack('JumpIn Clicked', {
       button_location: 'hero',
-      button_text: 'Download Decentraland',
-      download_type: trackingData?.type,
-      href: trackingData?.url,
-      track_uuid: trackingData?.track_uuid,
+      button_text: 'Start Earning',
+      ...data
     });
   }, [onTrack]);
 
@@ -57,10 +51,24 @@ const Hero = ({ onTrack }: HeroProps) => {
             
             <div className="flex flex-col sm:flex-row gap-8 md:gap-10 justify-center lg:justify-start items-center animate-fade-in">
               <div className="flex-shrink-0">
-                <BigDownloadButton
-                  onClick={handleClickDownload}
-                  label="Start Earning"
-                  trackingId="hero-download"
+                <JumpIn
+                  variant="button"
+                  buttonText="Start Earning"
+                  onTrack={handleTrack}
+                  buttonProps={{
+                    size: "large",
+                    style: {
+                      padding: '24px 24px',
+                      fontSize: '18px',
+                      minHeight: '60px'
+                    },
+                    className: "jumpin-button-large"
+                  }}
+                  modalProps={{
+                    title: "Download Decentraland",
+                    description: "Join the metaverse and start earning Marketplace Credits",
+                    buttonLabel: "Download Now"
+                  }}
                 />
               </div>
               

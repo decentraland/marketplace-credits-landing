@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import BigDownloadButton from './BigDownloadButton';
+import { JumpIn } from 'decentraland-ui2';
 import { useCallback } from "react";
 
 interface VideoSectionProps {
@@ -37,18 +37,12 @@ const VideoSection = ({ onTrack }: VideoSectionProps) => {
     };
   }, []);
 
-  const handleClickDownload = useCallback((event: React.MouseEvent<HTMLButtonElement>, trackingData: any) => {
+  const handleTrack = useCallback((data: Record<string, unknown>) => {
     if (onTrack) {
-      if(!trackingData?.url) {
-        return;
-      }
-
-      onTrack('Download', {
+      onTrack('JumpIn Clicked', {
         button_location: 'video_section',
-        button_text: 'Download Decentraland',
-        download_type: trackingData?.type,
-        href: trackingData?.url,
-        track_uuid: trackingData?.track_uuid,
+        button_text: 'START EARNING',
+        ...data
       });
     }
   }, [onTrack]);
@@ -83,11 +77,27 @@ const VideoSection = ({ onTrack }: VideoSectionProps) => {
         </p>
 
         <div className="flex justify-center mt-8 md:mt-12">
-          <BigDownloadButton
-            onClick={handleClickDownload}
-            label="START EARNING"
-            trackingId="video-section-download"
-          />
+          <div className="flex-shrink-0">
+            <JumpIn
+              variant="button"
+              buttonText="START EARNING"
+              onTrack={handleTrack}
+              buttonProps={{
+                size: "large",
+                style: {
+                  padding: '24px 24px',
+                  fontSize: '18px',
+                  minHeight: '60px'
+                },
+                className: "jumpin-button-large"
+              }}
+              modalProps={{
+                title: "Download Decentraland",
+                description: "Join the metaverse and start earning Marketplace Credits",
+                buttonLabel: "Download Now"
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>

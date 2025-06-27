@@ -136,6 +136,21 @@ div[class*="download-button"] button:hover,
   transform: scale(1.05) !important;
 }
 
+
+button[class*="JumpIn"]:hover,
+button[class*="jump-in"]:hover,
+[class*="JumpIn"] button:hover,
+[class*="jump-in"] button:hover,
+div[class*="JumpIn"] button:hover,
+div[class*="jump-in"] button:hover,
+.MuiButton-root[class*="JumpIn"]:hover,
+.MuiButton-root[class*="jump-in"]:hover,
+.css-*[class*="JumpIn"] button:hover,
+.css-*[class*="jump-in"] button:hover,
+.jumpin-button-large:hover {
+  transform: scale(1.05) !important;
+}
+
 @media (min-width: 768px) {
   button[class*="DownloadButton"],
   button[class*="download-button"],
@@ -147,6 +162,22 @@ div[class*="download-button"] button:hover,
   .MuiButton-root[class*="download-button"],
   .css-*[class*="DownloadButton"] button,
   .css-*[class*="download-button"] button {
+    padding: 2rem 2.5rem !important;
+    font-size: 1.25rem !important;
+    min-height: 4.5rem !important;
+  }
+
+  button[class*="JumpIn"],
+  button[class*="jump-in"],
+  [class*="JumpIn"] button,
+  [class*="jump-in"] button,
+  div[class*="JumpIn"] button,
+  div[class*="jump-in"] button,
+  .MuiButton-root[class*="JumpIn"],
+  .MuiButton-root[class*="jump-in"],
+  .css-*[class*="JumpIn"] button,
+  .css-*[class*="jump-in"] button,
+  .jumpin-button-large {
     padding: 2rem 2.5rem !important;
     font-size: 1.25rem !important;
     min-height: 4.5rem !important;
