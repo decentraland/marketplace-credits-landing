@@ -5,6 +5,7 @@ import ProgramDetails from "@/components/ProgramDetails";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import AnimatedShoppingBags from "@/components/AnimatedShoppingBags";
 import useAnalytics from "@/hooks/use-analytics";
 import { useEffect } from "react";
@@ -34,6 +35,7 @@ const Index = () => {
         <ProgramDetails />
         <FinalCTA onTrack={track} />
         <FAQ />
+        <Footer />
       </div>
     </div>
   );
